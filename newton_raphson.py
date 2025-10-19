@@ -2,12 +2,11 @@ import sympy as sp
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Get function input from user
 user_input = input("Enter your function in terms of x (e.g., x**3 - 4*x - 9): ")
 x = sp.Symbol('x')
 f = sp.sympify(user_input)
 
-# derivate
+# calculate derivate
 df = sp.diff(f, x)
 
 f_num = sp.lambdify(x, f, "numpy") # need to convert the input into numerical values
