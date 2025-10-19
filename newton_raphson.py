@@ -47,7 +47,7 @@ for i in range(len(x_values)-1):
     plt.plot(x_values[i], f_num(x_values[i]), 'ro')
     plt.plot([x_values[i], x_values[i]], [0, f_num(x_values[i])], 'r--')
 
-plt.title("Newton-Raphson Method: Function & Iteration Evolution")
+plt.title("Newton-Raphson Method")
 plt.xlabel("x")
 plt.ylabel("f(x)")
 plt.legend()
